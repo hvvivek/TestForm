@@ -19,12 +19,11 @@
         <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
 
 </head>
-<body>
+<body onscroll="checkActiveQuestion()">
     <div id="form-wrapper">
         <!-- Begin Form -->
-        <form action="" >
+        <form action='https://www.getform.org/f/d59e2f1e-a77f-44d0-86e4-01554b5ff3d5' id="survey-form" method="POST">
             <ul class="container">
-                
                 <!-- Begin Question 1 -->
                 <li class="col-xs-10 col-xs-offset-1 active">
                     <p class="question"><span class="question-number">1 &#8594</span>How did you come across our product?</p>
@@ -32,42 +31,42 @@
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">A</div>
-                            <label><input type="checkbox">
+                            <label><input name="q1" value="Word of Mouth" type="radio" onchange="console.log('changed1')">
                             Word of Mouth</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">B</div>
-                            <label><input type="checkbox">
+                            <label><input name="q1" value="Conferences/Events" type="radio" onchange="console.log('changed2')">
                             Conferences/Events</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">C</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q1" value="Google" type="radio" onchange="console.log('changed3')">
                             Google</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">D</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q1" value="Twitter" type="radio" onchange="console.log('changed4')">
                             Twitter</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q1" value="Medium" type="radio" onchange="console.log('changed5')">
                             Medium</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">F</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q1" value="Other" type="radio" onchange="console.log('changed6')">
                             Other</label>
                         </div>
                     </div>
@@ -81,42 +80,42 @@
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">A</div>
-                            <label><input type="checkbox">
+                            <label><input name="q2" value="Radiologist" type="radio" onchange="console.log('changed1')">
                             Radiologist</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">B</div>
-                            <label><input type="checkbox">
+                            <label><input name="q2" value="Hepatobiliary Surgeon" type="radio" onchange="console.log('changed1')">
                             Hepatobiliary Surgeon</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">C</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q2" value="Surgical Oncologist" type="radio" onchange="console.log('changed1')">
                             Surgical Oncologist</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">D</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q2" value="Medical Oncologist" type="radio" onchange="console.log('changed1')">
                             Medical Oncologist</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q2" value="Healthcare IT Professional" type="radio" onchange="console.log('changed1')">
                             Healthcare IT Professional</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">F</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q2" value="Other" type="radio" onchange="console.log('changed1')">
                             Other</label>
                         </div>
                     </div>
@@ -130,56 +129,56 @@
                     <div class="wrapper-multiple-choice col-xs-4">
                         <div class="multiple-choice">
                             <div class="option-alphanum">A</div>
-                            <label><input type="checkbox">
+                            <label><input name="q3" value="Bangalore" type="radio" onchange="console.log('changed1')">
                             Bangalore</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-4">
                         <div class="multiple-choice">
                             <div class="option-alphanum">B</div>
-                            <label><input type="checkbox">
+                            <label><input name="q3" value="Chennai" type="radio" onchange="console.log('changed1')">
                             Chennai</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-4">
                         <div class="multiple-choice">
                             <div class="option-alphanum">C</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q3" value="Delhi" type="radio" onchange="console.log('changed1')">
                             Delhi</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-4">
                         <div class="multiple-choice">
                             <div class="option-alphanum">D</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q3" value="Mumbai" type="radio" onchange="console.log('changed1')">
                             Mumbai</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-4">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q3" value="Hyderabad" type="radio" onchange="console.log('changed1')">
                             Hyderabad</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-4">
                         <div class="multiple-choice">
                             <div class="option-alphanum">F</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q3" value="US" type="radio" onchange="console.log('changed1')">
                             US</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-4">
                         <div class="multiple-choice">
                             <div class="option-alphanum">F</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q3" value="Europe" type="radio" onchange="console.log('changed1')">
                             Europe</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-4">
                         <div class="multiple-choice">
                             <div class="option-alphanum">F</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q3" value="Other" type="radio" onchange="console.log('changed1')">
                             Other</label>
                         </div>
                     </div>
@@ -193,42 +192,42 @@
                     <div class="wrapper-multiple-choice col-xs-7">
                         <div class="multiple-choice">
                             <div class="option-alphanum">A</div>
-                            <label><input type="checkbox">
+                            <label><input name="q4" value="Automated Segmentation," type="checkbox">
                             Automated Segmentation</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-7">
                         <div class="multiple-choice">
                             <div class="option-alphanum">B</div>
-                            <label><input type="checkbox">
+                            <label><input name="q4" value="3D reconstruction to visualise tumours," type="checkbox">
                             3D reconstruction to visualise tumours</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-7">
                         <div class="multiple-choice">
                             <div class="option-alphanum">C</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q4" value="3D reconstruction to visualise vessels," type="checkbox">
                             3D reconstruction to visualise vessels</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-7">
                         <div class="multiple-choice">
                             <div class="option-alphanum">D</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q4" value="Instant Volumetry," type="checkbox">
                             Instant Volumetry</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-7">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q4" value="Browser Application - Work from Anywhere," type="checkbox">
                             Browser Application - Work from Anywhere</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-7">
                         <div class="multiple-choice">
                             <div class="option-alphanum">F</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q4" value="Other," type="checkbox">
                             Other</label>
                         </div>
                     </div>
@@ -242,35 +241,35 @@
                     <div class="wrapper-multiple-choice col-xs-7">
                         <div class="multiple-choice">
                             <div class="option-alphanum">A</div>
-                            <label><input type="checkbox">
+                            <label><input name="q5" value="Exceeded way above my expectations" type="radio" onchange="console.log('changed1')">
                             Exceeded way above my expectations</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-7">
                         <div class="multiple-choice">
                             <div class="option-alphanum">B</div>
-                            <label><input type="checkbox">
+                            <label><input name="q5" value="Somewhat above my expectations" type="radio" onchange="console.log('changed1')">
                             Somewhat above my expectations</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-7">
                         <div class="multiple-choice">
                             <div class="option-alphanum">C</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q5" value="Neutral" type="radio" onchange="console.log('changed1')">
                             Neutral</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-7">
                         <div class="multiple-choice">
                             <div class="option-alphanum">D</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q5" value="Somewhat below my expectations" type="radio" onchange="console.log('changed1')">
                             Somewhat below my expectations</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-7">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q5" value="Way below my expectations" type="radio" onchange="console.log('changed1')">
                             Way below my expectations</label>
                         </div>
                     </div>
@@ -284,35 +283,35 @@
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">A</div>
-                            <label><input type="checkbox">
+                            <label><input name="q6" value="Extremely intuitive" type="radio" onchange="console.log('changed1')">
                             Extremely intuitive</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">B</div>
-                            <label><input type="checkbox">
+                            <label><input name="q6" value="Somewhat intuitive" type="radio" onchange="console.log('changed1')">
                             Somewhat intuitive</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">C</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q6" value="Neutral" type="radio" onchange="console.log('changed1')">
                             Neutral</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">D</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q6" value="Somewhat not intuitive" type="radio" onchange="console.log('changed1')">
                             Somewhat not intuitive</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q6" value="Not intuitive at all" type="radio" onchange="console.log('changed1')">
                             Not intuitive at all</label>
                         </div>
                     </div>
@@ -326,49 +325,49 @@
                     <div class="wrapper-multiple-choice col-xs-4">
                         <div class="multiple-choice">
                             <div class="option-alphanum">A</div>
-                            <label><input type="checkbox">
+                            <label><input name="q7" value="Task 1" type="checkbox">
                             Task 1</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-4">
                         <div class="multiple-choice">
                             <div class="option-alphanum">B</div>
-                            <label><input type="checkbox">
+                            <label><input name="q7" value="Task 2" type="checkbox">
                             Task 2</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-4">
                         <div class="multiple-choice">
                             <div class="option-alphanum">C</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q7" value="Task 3" type="checkbox">
                             Task 3</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-4">
                         <div class="multiple-choice">
                             <div class="option-alphanum">D</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q7" value="Task 4" type="checkbox">
                             Task 4</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-4">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q7" value="Task 5" type="checkbox">
                             Task 5</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-4">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q7" value="Task 6" type="checkbox">
                             Task 6</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-4">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q7" value="Dont Remember" type="checkbox">
                             Dont Remember</label>
                         </div>
                     </div>
@@ -382,43 +381,43 @@
                     <div class="wrapper-multiple-choice col-xs-7">
                         <div class="multiple-choice">
                             <div class="option-alphanum">A</div>
-                            <input type="checkbox">
-                            Healthy liver was segmented well
+                            <label><input name="q8" value="Healthy liver was segmented well" type="radio" onchange="console.log('changed1')">
+                            Healthy liver was segmented well</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-7">
                         <div class="multiple-choice">
                             <div class="option-alphanum">B</div>
-                            <input type="checkbox">
-                            Lesions were segmented well
+                            <label><input name="q8" value="Lesions were segmented well" type="radio" onchange="console.log('changed1')">
+                            Lesions were segmented well</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-7">
                         <div class="multiple-choice">
                             <div class="option-alphanum">C</div>                            
-                            <input type="checkbox">
-                            Hepatic artery was segmented well
+                            <label><input name="q8" value="Hepatic artery was segmented well" type="radio" onchange="console.log('changed1')">
+                            Hepatic artery was segmented well</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-7">
                         <div class="multiple-choice">
                             <div class="option-alphanum">D</div>                            
-                            <input type="checkbox">
-                            Portal vein was segmented well
+                            <label><input name="q8" value="Portal vein was segmented well" type="radio" onchange="console.log('changed1')">
+                            Portal vein was segmented well</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-7">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <input type="checkbox">
-                            Hepatic vein was segmented well
+                            <label><input name="q8" value="Hepatic vein was segmented well" type="radio" onchange="console.log('changed1')">
+                            Hepatic vein was segmented well</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-7">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <input type="checkbox">
-                            Everything was low quality
+                            <label><input name="q8" value="Everything was low quality" type="radio" onchange="console.log('changed1')">
+                            Everything was low quality</label>
                         </div>
                     </div>
                 </li>
@@ -430,37 +429,37 @@
                     <div class="col-xs-12">
                         <div class="rating-multiple-choice col-xs-2">
                             <div class="rating-choice">
-                                <label><input type="checkbox">
+                                <label><input name="q9" value="0" type="radio" onchange="console.log('changed1')">
                                 0</label>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-2">
                             <div class="rating-choice">
-                                <label><input type="checkbox">
+                                <label><input name="q9" value="1" type="radio" onchange="console.log('changed1')">
                                 1</label>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-2">
                             <div class="rating-choice">
-                                <label><input type="checkbox">
+                                <label><input name="q9" value="2" type="radio" onchange="console.log('changed1')">
                                 2</label>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-2">
                             <div class="rating-choice">
-                                <label><input type="checkbox">
+                                <label><input name="q9" value="3" type="radio" onchange="console.log('changed1')">
                                 3</label>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-2">
                             <div class="rating-choice">
-                                <label><input type="checkbox">
+                                <label><input name="q9" value="4" type="radio" onchange="console.log('changed1')">
                                 4</label>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-2">
                             <div class="rating-choice">
-                                <label><input type="checkbox">
+                                <label><input name="q9" value="5" type="radio" onchange="console.log('changed1')">
                                 5</label>
                             </div>
                         </div>
@@ -486,42 +485,42 @@
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">A</div>
-                            <label><input type="checkbox">
+                            <label><input name="q10" value="Extremely user-friendly" type="radio" onchange="console.log('changed1')">
                             Extremely user-friendly</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">B</div>
-                            <label><input type="checkbox">
+                            <label><input name="q10" value="Very user-friendly" type="radio" onchange="console.log('changed1')">
                             Very user-friendly</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">C</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q10" value="Somewhat user-friendly" type="radio" onchange="console.log('changed1')">
                             Somewhat user-friendly</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">D</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q10" value="Not so user-friendly" type="radio" onchange="console.log('changed1')">
                             Not so user-friendly</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q10" value="Not at all user-friendly" type="radio" onchange="console.log('changed1')">
                             Not at all user-friendly</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q10" value="Did not try the tool" type="radio" onchange="console.log('changed1')">
                             Did not try the tool</label>
                         </div>
                     </div>
@@ -534,37 +533,37 @@
                     <div class="col-xs-12">
                         <div class="rating-multiple-choice col-xs-2">
                             <div class="rating-choice">
-                                <label><input type="checkbox">
+                                <label><input name="q11" value="0" type="radio" onchange="console.log('changed1')">
                                 0</label>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-2">
                             <div class="rating-choice">
-                                <label><input type="checkbox">
+                                <label><input name="q11" value="1" type="radio" onchange="console.log('changed1')">
                                 1</label>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-2">
                             <div class="rating-choice">
-                                <label><input type="checkbox">
+                                <label><input name="q11" value="2" type="radio" onchange="console.log('changed1')">
                                 2</label>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-2">
                             <div class="rating-choice">
-                                <label><input type="checkbox">
+                                <label><input name="q11" value="3" type="radio" onchange="console.log('changed1')">
                                 3</label>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-2">
                             <div class="rating-choice">
-                                <label><input type="checkbox">
+                                <label><input name="q11" value="4" type="radio" onchange="console.log('changed1')">
                                 4</label>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-2">
                             <div class="rating-choice">
-                                <label><input type="checkbox">
+                                <label><input name="q11" value="5" type="radio" onchange="console.log('changed1')">
                                 5</label>
                             </div>
                         </div>
@@ -590,42 +589,42 @@
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">A</div>
-                            <label><input type="checkbox">
+                            <label><input name="q12" value="Extremely user-friendly" type="radio" onchange="console.log('changed1')">
                             Extremely user-friendly</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">B</div>
-                            <label><input type="checkbox">
+                            <label><input name="q12" value="Very user-friendly" type="radio" onchange="console.log('changed1')">
                             Very user-friendly</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">C</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q12" value="Somewhat user-friendly" type="radio" onchange="console.log('changed1')">
                             Somewhat user-friendly</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">D</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q12" value="Not so user-friendly" type="radio" onchange="console.log('changed1')">
                             Not so user-friendly</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q12" value="Not at all user-friendly" type="radio" onchange="console.log('changed1')">
                             Not at all user-friendly</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q12" value="Did not try the tool" type="radio" onchange="console.log('changed1')">
                             Did not try the tool</label>
                         </div>
                     </div>
@@ -639,35 +638,35 @@
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">A</div>
-                            <label><input type="checkbox">
+                            <label><input name="q13" value="Very interactive" type="radio" onchange="console.log('changed1')">
                             Very interactive</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">B</div>
-                            <label><input type="checkbox">
+                            <label><input name="q13" value="Neutral" type="radio" onchange="console.log('changed1')">
                             Neutral</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">C</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q13" value="Not so interactive" type="radio" onchange="console.log('changed1')">
                             Not so interactive</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">D</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q13" value="Very slow" type="radio" onchange="console.log('changed1')">
                             Very slow</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q13" value="Not intuitive enough to use" type="radio" onchange="console.log('changed1')">
                             Not intuitive enough to use</label>
                         </div>
                     </div>
@@ -681,35 +680,35 @@
                     <div class="wrapper-multiple-choice col-xs-7">
                         <div class="multiple-choice">
                             <div class="option-alphanum">A</div>
-                            <label><input type="checkbox">
+                            <label><input name="q14" value="Hepatic Volumetry," type="checkbox">
                             Hepatic Volumetry</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-7">
                         <div class="multiple-choice">
                             <div class="option-alphanum">B</div>
-                            <label><input type="checkbox">
+                            <label><input name="q14" value="Online text editor for reporting," type="checkbox">
                             Online text editor for reporting</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-7">
                         <div class="multiple-choice">
                             <div class="option-alphanum">C</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q14" value="3D reconstruction snapshots," type="checkbox">
                             3D reconstruction snapshots</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-7">
                         <div class="multiple-choice">
                             <div class="option-alphanum">D</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q14" value="Download to system," type="checkbox">
                             Download to system</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-7">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q14" value="Other," type="checkbox">
                             Other</label>
                         </div>
                     </div>
@@ -723,42 +722,42 @@
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">A</div>
-                            <label><input type="checkbox">
+                            <label><input name="q15" value="More than 20 patients a month" type="radio" onchange="console.log('changed1')">
                             More than 20 patients a month</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">B</div>
-                            <label><input type="checkbox">
+                            <label><input name="q15" value="10-20 patients a month" type="radio" onchange="console.log('changed1')">
                             10-20 patients a month</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">C</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q15" value="5-10 patients a month" type="radio" onchange="console.log('changed1')">
                             5-10 patients a month</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">D</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q15" value="Less than 5 patients a month" type="radio" onchange="console.log('changed1')">
                             Less than 5 patients a month</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q15" value="Probably dont use" type="radio" onchange="console.log('changed1')">
                             Probably dont use</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q15" value="Definitely dont use" type="radio" onchange="console.log('changed1')">
                             Definitely dont use</label>
                         </div>
                     </div>
@@ -772,28 +771,28 @@
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">A</div>
-                            <label><input type="checkbox">
+                            <label><input name="q16" value="Pay-per-use" type="radio" onchange="console.log('changed1')">
                             Pay-per-use</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">B</div>
-                            <label><input type="checkbox">
+                            <label><input name="q16" value="Monthly subscription" type="radio" onchange="console.log('changed1')">
                             Monthly subscription</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">C</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q16" value="Annual subscription" type="radio" onchange="console.log('changed1')">
                             Annual subscription</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">D</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q16" value="Other" type="radio" onchange="console.log('changed1')">
                             Other</label>
                         </div>
                     </div>
@@ -808,28 +807,28 @@
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">A</div>
-                            <label><input type="checkbox">
+                            <label><input name="q17" value="INR 1500-3000 (USD 25-50)" type="radio" onchange="console.log('changed1')">
                             INR 1500-3000 (USD 25-50)</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">B</div>
-                            <label><input type="checkbox">
+                            <label><input name="q17" value="INR 3000-6000 (USD 50-100)" type="radio" onchange="console.log('changed1')">
                             INR 3000-6000 (USD 50-100)</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">C</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q17" value="INR 6000-9000 (USD 100-150)" type="radio" onchange="console.log('changed1')">
                             INR 6000-9000 (USD 100-150)</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">D</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q17" value="INR 9000-12000 (USD 150-200)" type="radio" onchange="console.log('changed1')">
                             INR 9000-12000 (USD 150-200)</label>
                         </div>
                     </div>
@@ -844,35 +843,35 @@
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">A</div>
-                            <label><input type="checkbox">
+                            <label><input name="q18" value="Advanced solutions like Myrian, TeraRecon" type="radio" onchange="console.log('changed1')">
                             Advanced solutions like Myrian, TeraRecon</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">B</div>
-                            <label><input type="checkbox">
+                            <label><input name="q18" value="OEM Manufacturer: GE/Philips/Siemens workstation" type="radio" onchange="console.log('changed1')">
                             OEM Manufacturer: GE/Philips/Siemens workstation</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">C</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q18" value="Radiologist tells me, I am unaware of the software" type="radio" onchange="console.log('changed1')">
                             Radiologist tells me, I am unaware of the software</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">D</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q18" value="Read multi-phase CT scan directly, dont require any software" type="radio" onchange="console.log('changed1')">
                             Read multi-phase CT scan directly, dont require any software</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q18" value="Other" type="radio" onchange="console.log('changed1')">
                             Other</label>
                         </div>
                     </div>
@@ -887,35 +886,35 @@
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">A</div>
-                            <label><input type="checkbox">
+                            <label><input name="q19" value="Extremely likely" type="radio" onchange="console.log('changed1')">
                             Extremely likely</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">B</div>
-                            <label><input type="checkbox">
+                            <label><input name="q19" value="Very likely" type="radio" onchange="console.log('changed1')">
                             Very likely</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">C</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q19" value="Somewhat likely" type="radio" onchange="console.log('changed1')">
                             Somewhat likely</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">D</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q19" value="Not so likely" type="radio" onchange="console.log('changed1')">
                             Not so likely</label>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <label><input type="checkbox">
+                            <label><input name="q19" value="Not at all likely" type="radio" onchange="console.log('changed1')">
                             Not at all likely</label>
                         </div>
                     </div>
@@ -929,67 +928,67 @@
                     <div class="col-xs-12">
                         <div class="rating-multiple-choice col-xs-1">
                             <div class="rating-choice">
-                                <label><input type="checkbox">
+                                <label><input name="q20" value="0" type="radio" onchange="console.log('changed1')">
                                 0</label>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-1">
                             <div class="rating-choice">
-                                <label><input type="checkbox">
+                                <label><input name="q20" value="1" type="radio" onchange="console.log('changed1')">
                                 1</label>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-1">
                             <div class="rating-choice">
-                                <label><input type="checkbox">
+                                <label><input name="q20" value="2" type="radio" onchange="console.log('changed1')">
                                 2</label>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-1">
                             <div class="rating-choice">
-                                <label><input type="checkbox">
+                                <label><input name="q20" value="3" type="radio" onchange="console.log('changed1')">
                                 3</label>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-1">
                             <div class="rating-choice">
-                                <label><input type="checkbox">
+                                <label><input name="q20" value="4" type="radio" onchange="console.log('changed1')">
                                 4</label>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-1">
                             <div class="rating-choice">
-                                <label><input type="checkbox">
+                                <label><input name="q20" value="5" type="radio" onchange="console.log('changed1')">
                                 5</label>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-1">
                             <div class="rating-choice">
-                                <label><input type="checkbox">
+                                <label><input name="q20" value="6" type="radio" onchange="console.log('changed1')">
                                 6</label>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-1">
                             <div class="rating-choice">
-                                <label><input type="checkbox">
+                                <label><input name="q20" value="7" type="radio" onchange="console.log('changed1')">
                                 7</label>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-1">
                             <div class="rating-choice">
-                                <label><input type="checkbox">
+                                <label><input name="q20" value="8" type="radio" onchange="console.log('changed1')">
                                 8</label>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-1">
                             <div class="rating-choice">
-                                <label><input type="checkbox">
+                                <label><input name="q20" value="9" type="radio" onchange="console.log('changed1')">
                                 9</label>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-1">
                             <div class="rating-choice">
-                                <label><input type="checkbox">
+                                <label><input name="q20" value="10" type="radio" onchange="console.log('changed1')">
                                 10</label>
                             </div>
                         </div>
@@ -1012,18 +1011,21 @@
                 <!-- Begin Question 21 -->
                 <li class="col-xs-10 col-xs-offset-1">
                     <p class="question"><span class="question-number">21 &#8594</span>In your own words, what are the things that you like most about this new product?</p>
-                    <textarea class="text-input col-xs-11" rows="1" ></textarea>
+                    <textarea name="q21" form="survey-form" class="text-input col-xs-11" rows="1" ></textarea>
+                    
                 </li>
                 <!-- End Question 21 -->
 
                 <!-- Begin Question 22 -->
                 <li class="col-xs-10 col-xs-offset-1">
                     <p class="question"><span class="question-number">22 &#8594</span>In your own words, what are the things that you would most like to improve in this new product?</p>
-                    <textarea class="text-input col-xs-11" rows="1" ></textarea>
+                    <textarea name="q22" form="survey-form" class="text-input col-xs-11" rows="1" ></textarea>
                 </li>
                 <!-- End Question 22 -->
 
             </ul>
+                            <input type="submit" value="Submit">
+
         </form>
     </div>
     <!-- End Form -->
