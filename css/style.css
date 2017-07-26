@@ -1,0 +1,81 @@
+body{
+    font-family: "Oxygen"
+}
+
+#form-wrapper
+{
+    margin-top: 50vh;
+    padding: 0px;
+    font-size: 1.1em;
+}
+
+#form-wrapper>div
+{
+    padding: 0px;;
+}
+
+ul.container
+{
+    list-style: none;
+}
+
+#form-wrapper li
+{
+    margin-bottom: 15vh;
+}
+
+.question
+{
+    font-size: 1.1em;
+}
+
+.question-number
+{
+    color: rgba(79, 176, 174,1);
+    margin-right: 1.5em;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+#form-wrapper div.wrapper-multiple-choice
+{
+    padding: 2px 5px;
+}
+.multiple-choice
+{
+    background-color:rgba(79, 176, 174,0.15);
+    border:1px solid rgba(79,176,174,0.6);
+    border-radius: 3px;
+    margin-top: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: rgba(79, 176, 174,1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 30px;
+    cursor: pointer;
+}
+.option-alphanum
+{
+    display: inline-block;
+    color: rgba(79, 176, 174,1);
+    background-color:rgba(79, 176, 174,0.25);
+    border:1px solid rgba(79,176,174,0.85);
+    font-weight: bold;
+    font-size: 1.0em;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center
+}
+.multiple-choice:hover
+{
+    background-color:rgba(79, 176, 174,0.3);
+}
+
+.multiple-choice>input
+{
+    -moz-appearance: none;
+    -ms-progress-appearance: none;
+    -webkit-appearance: none;
+}
