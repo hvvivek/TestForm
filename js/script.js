@@ -100,7 +100,8 @@ function checkRadioOption(checkOption)
             }, 800, false);
         }
 
-    
+        fillCompletionBar();
+
     
     
 }
@@ -119,6 +120,72 @@ function checkOption(checkOption)
     var container = checkOption.parentNode.parentNode.parentNode.parentNode.parentNode.querySelectorAll(".wrapper-question-errortext")[0].classList.add("hidden");
 
     blink(checkOption);
+
+    fillCompletionBar();
+}
+
+function fillCompletionBar()
+{
+    var completeCount = 0;
+    var completionText = document.querySelector("#footer p");
+
+    var checkboxQuestions = document.querySelectorAll(".required-checkbox");
+    for( var index = 0; index < checkboxQuestions.length; index++ )
+        {
+            var checkedOptions = checkboxQuestions[index].querySelectorAll("input[type=checkbox]:checked");
+            if( checkedOptions.length >0 )
+                {
+                    completeCount++;
+                }
+        }
+
+        var checkboxQuestions = document.querySelectorAll(".required-radio");
+    for( var index = 0; index < checkboxQuestions.length; index++ )
+        {
+            var checkedOptions = checkboxQuestions[index].querySelectorAll("input[type=radio]:checked");
+            if( checkedOptions.length > 0 )
+                {
+                    completeCount++;
+                }
+        }
+
+        var checkboxQuestions = document.querySelectorAll(".required-rating");
+    for( var index = 0; index < checkboxQuestions.length; index++ )
+        {
+            var checkedOptions = checkboxQuestions[index].querySelectorAll("input[type=radio]:checked");
+            if( checkedOptions.length > 0 )
+                {
+                    completeCount++;
+                }
+        }
+
+        var textareaQuestions = document.querySelectorAll("textarea");
+    for( var index = 0; index < textareaQuestions.length; index++ )
+        {
+            if( textareaQuestions[index].value.length > 0 )
+                {
+                    completeCount++;
+                }
+        }
+
+        if( completeCount > 0 )
+            {                
+                completionText.innerHTML = completeCount + " out of 22 completed";
+                var completionBoxes = document.querySelectorAll("#completion-bar>div");
+                                        console.log(completeCount);
+
+                for( var index = 0; index < completionBoxes.length; index++ )
+                    {
+                        if( completeCount > 0 )
+                            {
+                                completionBoxes[index].style.backgroundColor = "rgba(79, 176, 174,1)"
+                                completeCount--;
+                            }
+                        else{
+                                completionBoxes[index].style.backgroundColor = "rgba(79, 176, 174,0.3)"
+                            }
+                    }
+            }
 }
 
 function blink(checkOption)
@@ -159,6 +226,7 @@ function moveToNextQuestionRatingButton(checkOption)
 function auto_grow(element) {
     element.style.height = "5px";
     element.style.height = (element.scrollHeight)+"px";
+    fillCompletionBar()
 }
 
 function invalidInput(input)

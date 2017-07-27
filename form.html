@@ -1214,7 +1214,7 @@
                     <p class="question"><span class="question-number">21 &#8594</span>In your own words, what are the things that you like most about this new product?</p>
                     <p class="question-subtext "></p>
 
-                    <textarea name="q21" form="survey-form" class="text-input col-xs-11" rows="1" ></textarea>
+                    <textarea name="q21" form="survey-form" class="text-input col-xs-11" rows="1" onkeyup="auto_grow(this)"></textarea>
                     <div class="col-md-12">
                         <div class="wrapper-question-errortext hidden col-md-3">
                             <p class="question-errortext"><strong>Oops!</strong> You must make a selection</p>
@@ -1246,6 +1246,38 @@
         </form>
     </div>
     <!-- End Form -->
+
+    <!-- Start Footer -->
+    <div id="footer">
+        <div class="container">
+        <p class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">X out of Y answered</p>
+        <div id="completion-bar" class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        </div>
+    </div>
+    <!-- End Footer -->
 
     <!-- jQuery (Bootstrap JS plugins depend on it) -->
     <script src="js/jquery-2.1.4.min.js"></script>
