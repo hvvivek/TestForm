@@ -10,6 +10,11 @@ body{
     font-size: 1.1em;
 }
 
+#form-wrapper div
+{
+    box-sizing: border-box;
+}
+
 #form-wrapper li.active
 {
     opacity: 1;
@@ -59,7 +64,7 @@ ul.container
 #form-wrapper div.wrapper-multiple-choice
 {
     padding: 2px 5px;
-    margin: 1px;
+    margin: 2px;
 }
 
 #form-wrapper div.wrapper-no-margin
@@ -92,7 +97,7 @@ label
 
 #form-wrapper .no-border 
 {
-    border: none;
+    border: 1px solid transparent;
     background-color: rgba(79, 176, 174,0.05);
 }
 
@@ -121,7 +126,7 @@ label
     display: inline-block;
     color: rgba(79, 176, 174,1);
     background-color:rgba(79, 176, 174,0.25);
-    border:1px solid rgba(79,176,174,0.85);
+    border:1px solid rgba(79,176,174,0.4);
     font-weight: bold;
     font-size: 0.8em;
     width: 1.5em;
@@ -136,7 +141,7 @@ label
 
 .checked
 {
-    border: 2px solid rgba(79,176,174,0.6);
+    border: 1px solid rgba(79,176,174,1);
 }
 
 .checked>.option-alphanum
@@ -254,14 +259,35 @@ textarea::-webkit-input-placeholder{
 
 .submit-button
 {
-    background-color: rgba(79, 176, 174,0.8);
+    background-color: rgba(79, 176, 174,1);
     color: #FFFFFF;
     font-size: 1.5em;
-    font-weight: lighter;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .submit-button:hover
 {
     color: #FFFFFF;
-    background-color: rgba(79, 176, 174,1);
+    background-color: rgba(79, 176, 174,0.8);
+}
+
+.submit-button>a,.submit-button>a:hover, .submit-button>a:focus
+{
+    color: white;
+    text-decoration: none;
+}
+
+#sub-text
+{
+    font-size: 1.55em;
+    line-height: 180%;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#logo
+{
+    margin-bottom: 2em;
 }

@@ -9,6 +9,23 @@ function setVariables()
 {
     questions = document.querySelectorAll("#form-wrapper>form>ul>li");
     screenHeight = window.innerHeight;
+
+    var container = document.getElementById("center-container");
+    if( container )
+        {
+            console.log( screenHeight/2 + "px" );
+            container.style.paddingTop = (screenHeight/2 - (document.getElementById("center-container").scrollHeight/2)) + "px"; 
+        }
+
+        window.addEventListener('resize', (ev) => {
+            screenHeight = window.innerHeight;
+            var container = document.getElementById("center-container");
+            if( container )
+                {
+                    console.log( screenHeight/2 + "px" );
+                    container.style.paddingTop = (screenHeight/2 - (document.getElementById("center-container").scrollHeight/2)) + "px"; 
+                }
+        });
 }
 
 function checkActiveQuestion()
@@ -55,7 +72,7 @@ function checkRadioOption(checkOption)
                 }
         }
 
-    checkOption.parentNode.parentNode.parentNode.classList.add("wrapper-no-margin");        
+    // checkOption.parentNode.parentNode.parentNode.classList.add("wrapper-no-margin");        
     checkOption.parentNode.parentNode.classList.add("checked");
     
     blink(checkOption);
@@ -68,7 +85,7 @@ function checkRadioOption(checkOption)
 function checkOption(checkOption)
 {
     console.log("Value changed");
-    checkOption.parentNode.parentNode.parentNode.classList.add("wrapper-no-margin");        
+    // checkOption.parentNode.parentNode.parentNode.classList.add("wrapper-no-margin");        
     checkOption.parentNode.parentNode.classList.add("checked");
     
     blink(checkOption);
@@ -78,21 +95,21 @@ function blink(checkOption)
 {
     setTimeout(function() {
         checkOption.parentNode.parentNode.classList.add("no-border");
-        checkOption.parentNode.parentNode.parentNode.classList.remove("wrapper-no-margin");        
+        // checkOption.parentNode.parentNode.parentNode.classList.remove("wrapper-no-margin");        
     }, 150, false);
     setTimeout(function() {
         checkOption.parentNode.parentNode.classList.remove("no-border");
-        checkOption.parentNode.parentNode.parentNode.classList.add("wrapper-no-margin");        
+        // checkOption.parentNode.parentNode.parentNode.classList.add("wrapper-no-margin");        
 
     }, 300, false);
     setTimeout(function() {
         checkOption.parentNode.parentNode.classList.add("no-border");
-        checkOption.parentNode.parentNode.parentNode.classList.remove("wrapper-no-margin");        
+        // checkOption.parentNode.parentNode.parentNode.classList.remove("wrapper-no-margin");        
 
     }, 450, false);
     setTimeout(function() {
         checkOption.parentNode.parentNode.classList.remove("no-border");
-        checkOption.parentNode.parentNode.parentNode.classList.add("wrapper-no-margin");     
+        // checkOption.parentNode.parentNode.parentNode.classList.add("wrapper-no-margin");     
     }, 600, false);
     
 }
