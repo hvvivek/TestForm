@@ -416,3 +416,14 @@ textarea::-webkit-input-placeholder{
         margin-right: 0.1em;
     }
 }
+
+@media (max-width: 1200px) {
+    #completion-bar>div
+    {
+        width: 0.7em;
+        height: 0.2em;
+        background-color: rgba(79, 176, 174,0.3);
+        float: left;
+        margin-right: 0.1em;
+    }
+}
