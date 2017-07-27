@@ -86,18 +86,22 @@ function checkRadioOption(checkOption)
             
             checkOption.parentNode.parentNode.classList.add("rating-checked");
             var container = checkOption.parentNode.parentNode.parentNode.parentNode.parentNode.querySelectorAll(".wrapper-question-errortext")[0].classList.add("hidden");
+            setTimeout(function() {
+                moveToNextQuestionRatingButton( checkOption );   
+            }, 800, false);
         }
     else
         {      
             checkOption.parentNode.parentNode.classList.add("checked");
             var container = checkOption.parentNode.parentNode.parentNode.parentNode.querySelectorAll(".wrapper-question-errortext")[0].classList.add("hidden");
             blink(checkOption);
+            setTimeout(function() {
+                moveToNextQuestion( checkOption );   
+            }, 800, false);
         }
 
     
-    setTimeout(function() {
-        moveToNextQuestion( checkOption );   
-    }, 800, false);
+    
     
 }
 
@@ -142,8 +146,14 @@ function blink(checkOption)
 
 function moveToNextQuestion(checkOption)
 {
-    console.log(checkOption.parentNode.parentNode.parentNode.parentNode.scrollHeight);
-    scrollBy(0, checkOption.parentNode.parentNode.parentNode.parentNode.scrollHeight+100);
+    console.log(checkOption.parentNode.parentNode.parentNode.parentNode.offsetHeight/2);
+    scrollTo(0, checkOption.parentNode.parentNode.parentNode.parentNode.offsetTop + checkOption.parentNode.parentNode.parentNode.parentNode.offsetHeight/2);
+}
+
+function moveToNextQuestionRatingButton(checkOption)
+{
+    console.log(checkOption.parentNode.parentNode.parentNode.parentNode.offsetHeight/2);
+    scrollTo(0, checkOption.parentNode.parentNode.parentNode.parentNode.parentNode.offsetTop + checkOption.parentNode.parentNode.parentNode.parentNode.parentNode.offsetHeight/2);
 }
 
 function auto_grow(element) {
