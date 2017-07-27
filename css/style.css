@@ -57,6 +57,17 @@ ul.container
         /* margin-bottom: 2em; */
 }
 
+#form-error
+{
+    margin-top: 1.5em;
+    color: white;
+    background-color: rgb(153,0,0);
+    padding: 5px;
+    font-size: 0.8em;
+
+        /* margin-bottom: 2em; */
+}
+
 .question-number
 {
     color: rgba(79, 176, 174,1);
@@ -167,9 +178,18 @@ label
     visibility: visible;
 }
 
+.rating-checked
+{
+    background-color: rgba(79, 176, 174,1);
+    color: #FFF;
+    border: 1px solid rgba(79,176,174,1);
+}
+
+
 .rating-choice:hover
 {
-    background-color:rgba(79, 176, 174,0.3);
+    background-color:rgba(79, 176, 174,1);
+    color: #FFFFFF;
 }
 
 .multiple-choice>label>input
@@ -279,10 +299,11 @@ textarea::-webkit-input-placeholder{
     padding-bottom: 10px;
 }
 
-.submit-button:hover
+.submit-button:hover,.submit-button:focus
 {
     color: #FFFFFF;
     background-color: rgba(79, 176, 174,0.8);
+    outline: none;
 }
 
 .submit-button>a,.submit-button>a:hover, .submit-button>a:focus
@@ -308,6 +329,13 @@ textarea::-webkit-input-placeholder{
 {
     margin-bottom: 0px;
 }
+
+#form-error
+{
+    margin-bottom: 0px;
+}
+
+
 .wrapper-question-errortext>div
 {
     margin-top: -2.1em;

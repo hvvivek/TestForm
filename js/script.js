@@ -61,23 +61,40 @@ function checkActiveQuestion()
 function checkRadioOption(checkOption)
 {
     console.log("Value changed");
-    var otherQuestions = checkOption.parentNode.parentNode.parentNode.parentNode.querySelectorAll(".multiple-choice");
-        console.log(otherQuestions);
+    var otherQuestions = checkOption.parentNode.parentNode.parentNode.parentNode.querySelectorAll(".multiple-choice, .rating-multiple-choice");
     for( var index = 0; index < otherQuestions.length; index++ )
         {
-            if( otherQuestions[index].classList.contains("checked") )
+            var prev = otherQuestions[index].querySelectorAll(".rating-checked")[0];
+            if( prev )
                 {
-                    otherQuestions[index].classList.remove("checked");
-                    break;
+                    prev.classList.remove("rating-checked");
                 }
+            else
+                {
+                    if( otherQuestions[index].classList.contains("checked") )
+                        {
+                            otherQuestions[index].classList.remove("checked");
+                            break;
+                        }
+                }
+
         }
 
-    // checkOption.parentNode.parentNode.parentNode.classList.add("wrapper-no-margin");        
-    checkOption.parentNode.parentNode.classList.add("checked");
-    var container = checkOption.parentNode.parentNode.parentNode.parentNode.querySelectorAll(".wrapper-question-errortext")[0].classList.add("hidden");
-    var container = checkOption.parentNode.parentNode.parentNode.parentNode.parentNode.querySelectorAll(".wrapper-question-errortext")[0].classList.add("hidden");
+    // checkOption.parentNode.parentNode.parentNode.classList.add("wrapper-no-margin");  
+    if( checkOption.parentNode.parentNode.classList.contains("rating-choice") )
+        {
+            
+            checkOption.parentNode.parentNode.classList.add("rating-checked");
+            var container = checkOption.parentNode.parentNode.parentNode.parentNode.parentNode.querySelectorAll(".wrapper-question-errortext")[0].classList.add("hidden");
+        }
+    else
+        {      
+            checkOption.parentNode.parentNode.classList.add("checked");
+            var container = checkOption.parentNode.parentNode.parentNode.parentNode.querySelectorAll(".wrapper-question-errortext")[0].classList.add("hidden");
+            blink(checkOption);
+        }
+
     
-    blink(checkOption);
     setTimeout(function() {
         moveToNextQuestion( checkOption );   
     }, 800, false);
@@ -146,10 +163,53 @@ function invalidInputExtraLayer(input)
     console.log(container);
 }
 
-function invalidInputMultiChoice(input)
+function invalidInputMultiChoice()
 {
-    var container = input.parentNode.parentNode.parentNode.parentNode.parentNode.querySelectorAll("input[type:checkbox]");
-    console.log("Here" + container);
+    console.log("called");
+    var errorCount = 0;
+    var errorText = document.getElementById("form-error");
+    errorText.classList.add("hidden");
+
+    var checkboxQuestions = document.querySelectorAll(".required-checkbox");
+    for( var index = 0; index < checkboxQuestions.length; index++ )
+        {
+            var checkedOptions = checkboxQuestions[index].querySelectorAll("input[type=checkbox]:checked");
+            if( checkedOptions.length == 0 )
+                {
+                    checkboxQuestions[index].querySelectorAll(".wrapper-question-errortext")[0].classList.remove("hidden");
+                    errorCount++;
+                }
+        }
+
+        var checkboxQuestions = document.querySelectorAll(".required-radio");
+    for( var index = 0; index < checkboxQuestions.length; index++ )
+        {
+            var checkedOptions = checkboxQuestions[index].querySelectorAll("input[type=radio]:checked");
+            if( checkedOptions.length == 0 )
+                {
+                    checkboxQuestions[index].querySelectorAll(".wrapper-question-errortext")[0].classList.remove("hidden");
+                    errorCount++;
+                }
+        }
+
+        var checkboxQuestions = document.querySelectorAll(".required-rating");
+    for( var index = 0; index < checkboxQuestions.length; index++ )
+        {
+            var checkedOptions = checkboxQuestions[index].querySelectorAll("input[type=radio]:checked");
+            if( checkedOptions.length == 0 )
+                {
+                    checkboxQuestions[index].querySelectorAll(".wrapper-question-errortext")[0].classList.remove("hidden");
+                    errorCount++;
+                }
+        }
+
+        if( errorCount > 0 )
+            {
+                event.preventDefault();
+                
+                errorText.classList.remove("hidden");
+                errorText.innerHTML = errorCount + " answer(s) need completing";
+            }
 }
 
 function input( element )
