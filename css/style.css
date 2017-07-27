@@ -390,6 +390,7 @@ textarea::-webkit-input-placeholder{
     .multiple-choice
     {
         font-size: 0.9em;
+        padding-right: 0px;
     }
     .option-alphanum
     {
@@ -409,18 +410,24 @@ textarea::-webkit-input-placeholder{
     }
     #completion-bar>div
     {
-        width: 0.5em;
+        width: 0.7em;
         height: 0.2em;
         background-color: rgba(79, 176, 174,0.3);
         float: left;
         margin-right: 0.1em;
+    }
+
+    .option-checkmark
+    {
+        float: none;
+        
     }
 }
 
 @media (max-width: 1200px) {
     #completion-bar>div
     {
-        width: 0.5em;
+        width: 0.7em;
         height: 0.2em;
         background-color: rgba(79, 176, 174,0.3);
         float: left;
