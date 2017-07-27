@@ -407,4 +407,12 @@ textarea::-webkit-input-placeholder{
     {
         font-size: 1.2em;
     }
+    #completion-bar>div
+    {
+        width: 0.7em;
+        height: 0.2em;
+        background-color: rgba(79, 176, 174,0.3);
+        float: left;
+        margin-right: 0.1em;
+    }
 }
