@@ -218,3 +218,16 @@ function input( element )
     element.setCustomValidity('');
     var container = input.parentNode.parentNode.parentNode.parentNode.querySelectorAll(".wrapper-question-errortext")[0].classList.add("hidden");
 }
+
+function selectOption( parentElement )
+{
+    parentElement.querySelectorAll("input[type=checkbox],input[type=radio]")[0].checked = true;
+    if(parentElement.querySelectorAll("input[type=checkbox]")[0])
+    {
+        checkOption( parentElement.querySelectorAll("input[type=checkbox]")[0] );
+    }
+    else if(parentElement.querySelectorAll("input[type=radio]")[0])
+    {
+        checkRadioOption( parentElement.querySelectorAll("input[type=radio]")[0] );
+    }
+}
