@@ -346,3 +346,34 @@ textarea::-webkit-input-placeholder{
     border-left: 5px solid transparent;
     border-bottom: 5px solid rgb(153,0,0);
 }
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .required-rating>.col-xs-12
+    {
+        padding: 0px;
+        font-size: 0.8em;
+    }
+    .rating-choice
+    {
+        padding: 4px;
+        height: 2.5em;
+    }
+    .multiple-choice
+    {
+        font-size: 0.9em;
+    }
+    .option-alphanum
+    {
+        margin-bottom: 0.5em;
+    }
+    .question
+    {
+        font-size: 1em;
+    }
+    .question-subtext
+    {
+        font-size: 0.8em;
+    }
+}
