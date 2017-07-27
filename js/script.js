@@ -74,6 +74,8 @@ function checkRadioOption(checkOption)
 
     // checkOption.parentNode.parentNode.parentNode.classList.add("wrapper-no-margin");        
     checkOption.parentNode.parentNode.classList.add("checked");
+    var container = checkOption.parentNode.parentNode.parentNode.parentNode.querySelectorAll(".wrapper-question-errortext")[0].classList.add("hidden");
+    var container = checkOption.parentNode.parentNode.parentNode.parentNode.parentNode.querySelectorAll(".wrapper-question-errortext")[0].classList.add("hidden");
     
     blink(checkOption);
     setTimeout(function() {
@@ -86,8 +88,15 @@ function checkOption(checkOption)
 {
     console.log("Value changed");
     // checkOption.parentNode.parentNode.parentNode.classList.add("wrapper-no-margin");        
-    checkOption.parentNode.parentNode.classList.add("checked");
-    
+    if( checkOption.parentNode.parentNode.classList.contains("checked") )
+        {
+            checkOption.parentNode.parentNode.classList.remove("checked");
+        }
+    else{
+        checkOption.parentNode.parentNode.classList.add("checked");
+    }
+    var container = checkOption.parentNode.parentNode.parentNode.parentNode.parentNode.querySelectorAll(".wrapper-question-errortext")[0].classList.add("hidden");
+
     blink(checkOption);
 }
 
@@ -123,4 +132,29 @@ function moveToNextQuestion(checkOption)
 function auto_grow(element) {
     element.style.height = "5px";
     element.style.height = (element.scrollHeight)+"px";
+}
+
+function invalidInput(input)
+{
+    var container = input.parentNode.parentNode.parentNode.parentNode.querySelectorAll(".wrapper-question-errortext")[0].classList.remove("hidden");
+    console.log(container);
+}
+
+function invalidInputExtraLayer(input)
+{
+    var container = input.parentNode.parentNode.parentNode.parentNode.parentNode.querySelectorAll(".wrapper-question-errortext")[0].classList.remove("hidden");
+    console.log(container);
+}
+
+function invalidInputMultiChoice(input)
+{
+    var container = input.parentNode.parentNode.parentNode.parentNode.parentNode.querySelectorAll("input[type:checkbox]");
+    console.log("Here" + container);
+}
+
+function input( element )
+{
+    console.log("input");
+    element.setCustomValidity('');
+    var container = input.parentNode.parentNode.parentNode.parentNode.querySelectorAll(".wrapper-question-errortext")[0].classList.add("hidden");
 }

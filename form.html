@@ -33,7 +33,10 @@
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">A</div>
-                            <label><input name="q1" value="Word of Mouth" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q1" value="Word of Mouth" type="radio" onchange="checkRadioOption(this)" required 
+                                oninvalid="invalidInput(this)"
+                                oninput="setCustomValidity('')"
+                                >
                             Word of Mouth</label>
                             <div class="option-checkmark"> &#10004 </div>
                         </div>
@@ -41,7 +44,7 @@
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">B</div>
-                            <label><input name="q1" value="Conferences/Events" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q1" value="Conferences/Events" type="radio" onchange="checkRadioOption(this)" required>
                             Conferences/Events</label>                             
                             <div class="option-checkmark"> &#10004 </div>
                         </div>
@@ -49,7 +52,7 @@
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">C</div>                            
-                            <label><input name="q1" value="Google" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q1" value="Google" type="radio" onchange="checkRadioOption(this)" required>
                             Google</label>                             
                             <div class="option-checkmark"> &#10004 </div>
                         </div>
@@ -57,7 +60,7 @@
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">D</div>                            
-                            <label><input name="q1" value="Twitter" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q1" value="Twitter" type="radio" onchange="checkRadioOption(this)" required>
                             Twitter</label>                             
                             <div class="option-checkmark"> &#10004 </div>
                         </div>
@@ -65,7 +68,7 @@
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <label><input name="q1" value="Medium" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q1" value="Medium" type="radio" onchange="checkRadioOption(this)" required>
                             Medium</label>                             
                             <div class="option-checkmark"> &#10004 </div>
                         </div>
@@ -73,11 +76,18 @@
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">F</div>                            
-                            <label><input name="q1" value="Other" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q1" value="Other" type="radio" onchange="checkRadioOption(this)" required>
                             Other</label>                             
                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
+                    <div class="col-xs-12">
+                        <div class="wrapper-question-errortext hidden col-xs-3">
+                        <p class="question-errortext"><strong>Oops!</strong> You must make a selection</p>
+                        <div></div>
+                    </div>
+                    </div>
+
                 </li>
                 <!-- End Question 1 -->
 
@@ -89,45 +99,54 @@
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">A</div>
-                            <label><input name="q2" value="Radiologist" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q2" value="Radiologist" type="radio" onchange="checkRadioOption(this)" required
+                                oninvalid="invalidInput(this)"
+                                oninput="setCustomValidity('')">
                             Radiologist</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">B</div>
-                            <label><input name="q2" value="Hepatobiliary Surgeon" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q2" value="Hepatobiliary Surgeon" type="radio" onchange="checkRadioOption(this)" required>
                             Hepatobiliary Surgeon</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">C</div>                            
-                            <label><input name="q2" value="Surgical Oncologist" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q2" value="Surgical Oncologist" type="radio" onchange="checkRadioOption(this)" required>
                             Surgical Oncologist</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">D</div>                            
-                            <label><input name="q2" value="Medical Oncologist" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q2" value="Medical Oncologist" type="radio" onchange="checkRadioOption(this)" required>
                             Medical Oncologist</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <label><input name="q2" value="Healthcare IT Professional" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q2" value="Healthcare IT Professional" type="radio" onchange="checkRadioOption(this)" required>
                             Healthcare IT Professional</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">F</div>                            
-                            <label><input name="q2" value="Other" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q2" value="Other" type="radio" onchange="checkRadioOption(this)" required>
                             Other</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
+                    <div class="col-xs-12">
+                    <div class="wrapper-question-errortext hidden col-xs-3">
+                        <p class="question-errortext"><strong>Oops!</strong> You must make a selection</p>
+                        <div></div>
+                    </div>
+                    </div>
+
                 </li>
                 <!-- End Question 2 -->
 
@@ -139,59 +158,68 @@
                     <div class="wrapper-multiple-choice col-xs-3">
                         <div class="multiple-choice">
                             <div class="option-alphanum">A</div>
-                            <label><input name="q3" value="Bangalore" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q3" value="Bangalore" type="radio" onchange="checkRadioOption(this)" required
+                                oninvalid="invalidInput(this)"
+                                oninput="setCustomValidity('')">
                             Bangalore</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-3">
                         <div class="multiple-choice">
                             <div class="option-alphanum">B</div>
-                            <label><input name="q3" value="Chennai" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q3" value="Chennai" type="radio" onchange="checkRadioOption(this)" required>
                             Chennai</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-3">
                         <div class="multiple-choice">
                             <div class="option-alphanum">C</div>                            
-                            <label><input name="q3" value="Delhi" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q3" value="Delhi" type="radio" onchange="checkRadioOption(this)" required>
                             Delhi</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-3">
                         <div class="multiple-choice">
                             <div class="option-alphanum">D</div>                            
-                            <label><input name="q3" value="Mumbai" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q3" value="Mumbai" type="radio" onchange="checkRadioOption(this)" required>
                             Mumbai</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-3">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <label><input name="q3" value="Hyderabad" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q3" value="Hyderabad" type="radio" onchange="checkRadioOption(this)" required>
                             Hyderabad</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-3">
                         <div class="multiple-choice">
                             <div class="option-alphanum">F</div>                            
-                            <label><input name="q3" value="US" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q3" value="US" type="radio" onchange="checkRadioOption(this)" required>
                             US</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-3">
                         <div class="multiple-choice">
                             <div class="option-alphanum">F</div>                            
-                            <label><input name="q3" value="Europe" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q3" value="Europe" type="radio" onchange="checkRadioOption(this)" required>
                             Europe</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-3">
                         <div class="multiple-choice">
                             <div class="option-alphanum">F</div>                            
-                            <label><input name="q3" value="Other" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q3" value="Other" type="radio" onchange="checkRadioOption(this)" required>
                             Other</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
+                    <div class="col-xs-12">
+                    <div class="wrapper-question-errortext hidden col-xs-3">
+                        <p class="question-errortext"><strong>Oops!</strong> You must make a selection</p>
+                        <div></div>
+                    </div>
+                    </div>
+
                 </li>
                 <!-- End Question 3 -->
 
@@ -205,7 +233,9 @@
                         <div class="wrapper-multiple-choice col-xs-7">
                             <div class="multiple-choice">
                                 <div class="option-alphanum">A</div>
-                                <label><input name="q4" value="Automated Segmentation," type="checkbox" onchange="checkOption(this)">
+                                <label><input name="q4" value="Automated Segmentation," type="checkbox" onchange="checkOption(this)"
+                                oninvalid="invalidInputMultiChoice(this)"
+                                oninput="setCustomValidity('')">
                                 Automated Segmentation</label>                             <div class="option-checkmark"> &#10004 </div>
                             </div>
                         </div>
@@ -245,6 +275,13 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-xs-12">
+                    <div class="wrapper-question-errortext hidden col-xs-3">
+                        <p class="question-errortext"><strong>Oops!</strong> You must make a selection</p>
+                        <div></div>
+                    </div>
+                    </div>
+
                 </li>
                 <!-- End Question 4 -->
 
@@ -256,38 +293,47 @@
                     <div class="wrapper-multiple-choice col-xs-7">
                         <div class="multiple-choice">
                             <div class="option-alphanum">A</div>
-                            <label><input name="q5" value="Exceeded way above my expectations" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q5" value="Exceeded way above my expectations" type="radio" onchange="checkRadioOption(this)" required
+                                oninvalid="invalidInput(this)"
+                                oninput="setCustomValidity('')">
                             Exceeded way above my expectations</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-7">
                         <div class="multiple-choice">
                             <div class="option-alphanum">B</div>
-                            <label><input name="q5" value="Somewhat above my expectations" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q5" value="Somewhat above my expectations" type="radio" onchange="checkRadioOption(this)" required>
                             Somewhat above my expectations</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-7">
                         <div class="multiple-choice">
                             <div class="option-alphanum">C</div>                            
-                            <label><input name="q5" value="Neutral" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q5" value="Neutral" type="radio" onchange="checkRadioOption(this)" required>
                             Neutral</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-7">
                         <div class="multiple-choice">
                             <div class="option-alphanum">D</div>                            
-                            <label><input name="q5" value="Somewhat below my expectations" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q5" value="Somewhat below my expectations" type="radio" onchange="checkRadioOption(this)" required>
                             Somewhat below my expectations</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-7">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <label><input name="q5" value="Way below my expectations" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q5" value="Way below my expectations" type="radio" onchange="checkRadioOption(this)" required>
                             Way below my expectations</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
+                    <div class="col-xs-12">
+                    <div class="wrapper-question-errortext hidden col-xs-3">
+                        <p class="question-errortext"><strong>Oops!</strong> You must make a selection</p>
+                        <div></div>
+                    </div>
+                    </div>
+
                 </li>
                 <!-- End Question 5 -->
 
@@ -299,38 +345,47 @@
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">A</div>
-                            <label><input name="q6" value="Extremely intuitive" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q6" value="Extremely intuitive" type="radio" onchange="checkRadioOption(this)" required
+                                oninvalid="invalidInput(this)"
+                                oninput="setCustomValidity('')">
                             Extremely intuitive</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">B</div>
-                            <label><input name="q6" value="Somewhat intuitive" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q6" value="Somewhat intuitive" type="radio" onchange="checkRadioOption(this)" required>
                             Somewhat intuitive</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">C</div>                            
-                            <label><input name="q6" value="Neutral" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q6" value="Neutral" type="radio" onchange="checkRadioOption(this)" required>
                             Neutral</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">D</div>                            
-                            <label><input name="q6" value="Somewhat not intuitive" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q6" value="Somewhat not intuitive" type="radio" onchange="checkRadioOption(this)" required>
                             Somewhat not intuitive</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <label><input name="q6" value="Not intuitive at all" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q6" value="Not intuitive at all" type="radio" onchange="checkRadioOption(this)" required>
                             Not intuitive at all</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
+                    <div class="col-xs-12">
+                    <div class="wrapper-question-errortext hidden col-xs-3">
+                        <p class="question-errortext"><strong>Oops!</strong> You must make a selection</p>
+                        <div></div>
+                    </div>
+                    </div>
+
                 </li>
                 <!-- End Question 6 -->
 
@@ -344,7 +399,9 @@
                         <div class="wrapper-multiple-choice col-xs-3">
                             <div class="multiple-choice">
                                 <div class="option-alphanum">A</div>
-                                <label><input name="q7" value="Task 1" type="checkbox" onchange="checkOption(this)">
+                                <label><input name="q7" value="Task 1" type="checkbox" onchange="checkOption(this)"
+                                oninvalid="invalidInputMultiChoice(this)"
+                                oninput="setCustomValidity('')">
                                 Task 1</label>                             <div class="option-checkmark"> &#10004 </div>
                             </div>
                         </div>
@@ -391,6 +448,13 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-xs-12">
+                    <div class="wrapper-question-errortext hidden col-xs-3">
+                        <p class="question-errortext"><strong>Oops!</strong> You must make a selection</p>
+                        <div></div>
+                    </div>
+                    </div>
+
                 </li>
                 <!-- End Question 7 -->
 
@@ -404,7 +468,9 @@
                         <div class="wrapper-multiple-choice col-xs-7">
                             <div class="multiple-choice">
                                 <div class="option-alphanum">A</div>
-                                <label><input name="q8" value="Healthy liver was segmented well" type="checkbox" onchange="checkOption(this)">
+                                <label><input name="q8" value="Healthy liver was segmented well" type="checkbox" onchange="checkOption(this)"
+                                oninvalid="invalidInputMultiChoice(this)"
+                                oninput="setCustomValidity('')">
                                 Healthy liver was segmented well</label>                             <div class="option-checkmark"> &#10004 </div>
                             </div>
                         </div>
@@ -444,6 +510,13 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-xs-12">
+                    <div class="wrapper-question-errortext hidden col-xs-3">
+                        <p class="question-errortext"><strong>Oops!</strong> You must make a selection</p>
+                        <div></div>
+                    </div>
+                    </div>
+
                 </li>
                 <!-- End Question 8 -->
 
@@ -455,37 +528,39 @@
                     <div class="col-xs-10 col-xs-offset-1">
                         <div class="rating-multiple-choice col-xs-2">
                             <div class="rating-choice">
-                                <label><input name="q9" value="0" type="radio" onchange="checkRadioOption(this)">
+                                <label><input name="q9" value="0" type="radio" onchange="checkRadioOption(this)" required
+                                    oninvalid="invalidInputExtraLayer(this)"
+                                oninput="setCustomValidity('')">
                                 0</label>                             <div class="option-checkmark"> &#10004 </div>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-2">
                             <div class="rating-choice">
-                                <label><input name="q9" value="1" type="radio" onchange="checkRadioOption(this)">
+                                <label><input name="q9" value="1" type="radio" onchange="checkRadioOption(this)" required>
                                 1</label>                             <div class="option-checkmark"> &#10004 </div>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-2">
                             <div class="rating-choice">
-                                <label><input name="q9" value="2" type="radio" onchange="checkRadioOption(this)">
+                                <label><input name="q9" value="2" type="radio" onchange="checkRadioOption(this)" required>
                                 2</label>                             <div class="option-checkmark"> &#10004 </div>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-2">
                             <div class="rating-choice">
-                                <label><input name="q9" value="3" type="radio" onchange="checkRadioOption(this)">
+                                <label><input name="q9" value="3" type="radio" onchange="checkRadioOption(this)" required>
                                 3</label>                             <div class="option-checkmark"> &#10004 </div>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-2">
                             <div class="rating-choice">
-                                <label><input name="q9" value="4" type="radio" onchange="checkRadioOption(this)">
+                                <label><input name="q9" value="4" type="radio" onchange="checkRadioOption(this)" required>
                                 4</label>                             <div class="option-checkmark"> &#10004 </div>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-2">
                             <div class="rating-choice">
-                                <label><input name="q9" value="5" type="radio" onchange="checkRadioOption(this)">
+                                <label><input name="q9" value="5" type="radio" onchange="checkRadioOption(this)" required>
                                 5</label>                             <div class="option-checkmark"> &#10004 </div>
                             </div>
                         </div>
@@ -501,6 +576,13 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-xs-12">
+                    <div class="wrapper-question-errortext hidden col-xs-3">
+                        <p class="question-errortext"><strong>Oops!</strong> You must make a selection</p>
+                        <div></div>
+                    </div>
+                    </div>
+
                 </li>
                 <!-- End Question 9 -->
 
@@ -512,45 +594,54 @@
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">A</div>
-                            <label><input name="q10" value="Extremely user-friendly" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q10" value="Extremely user-friendly" type="radio" onchange="checkRadioOption(this)" required
+                                oninvalid="invalidInput(this)"
+                                oninput="setCustomValidity('')">
                             Extremely user-friendly</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">B</div>
-                            <label><input name="q10" value="Very user-friendly" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q10" value="Very user-friendly" type="radio" onchange="checkRadioOption(this)" required>
                             Very user-friendly</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">C</div>                            
-                            <label><input name="q10" value="Somewhat user-friendly" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q10" value="Somewhat user-friendly" type="radio" onchange="checkRadioOption(this)" required>
                             Somewhat user-friendly</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">D</div>                            
-                            <label><input name="q10" value="Not so user-friendly" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q10" value="Not so user-friendly" type="radio" onchange="checkRadioOption(this)" required>
                             Not so user-friendly</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <label><input name="q10" value="Not at all user-friendly" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q10" value="Not at all user-friendly" type="radio" onchange="checkRadioOption(this)" required>
                             Not at all user-friendly</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <label><input name="q10" value="Did not try the tool" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q10" value="Did not try the tool" type="radio" onchange="checkRadioOption(this)" required>
                             Did not try the tool</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
+                    <div class="col-xs-12">
+                    <div class="wrapper-question-errortext hidden col-xs-3">
+                        <p class="question-errortext"><strong>Oops!</strong> You must make a selection</p>
+                        <div></div>
+                    </div>
+                    </div>
+
                 </li>
                 <!-- End Question 10 -->
 
@@ -562,37 +653,39 @@
                     <div class="col-xs-10 col-xs-offset-1">
                         <div class="rating-multiple-choice col-xs-2">
                             <div class="rating-choice">
-                                <label><input name="q11" value="0" type="radio" onchange="checkRadioOption(this)">
+                                <label><input name="q11" value="0" type="radio" onchange="checkRadioOption(this)" required
+                                    oninvalid="invalidInputExtraLayer(this)"
+                                oninput="setCustomValidity('')">
                                 0</label>                             <div class="option-checkmark"> &#10004 </div>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-2">
                             <div class="rating-choice">
-                                <label><input name="q11" value="1" type="radio" onchange="checkRadioOption(this)">
+                                <label><input name="q11" value="1" type="radio" onchange="checkRadioOption(this)" required>
                                 1</label>                             <div class="option-checkmark"> &#10004 </div>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-2">
                             <div class="rating-choice">
-                                <label><input name="q11" value="2" type="radio" onchange="checkRadioOption(this)">
+                                <label><input name="q11" value="2" type="radio" onchange="checkRadioOption(this)" required>
                                 2</label>                             <div class="option-checkmark"> &#10004 </div>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-2">
                             <div class="rating-choice">
-                                <label><input name="q11" value="3" type="radio" onchange="checkRadioOption(this)">
+                                <label><input name="q11" value="3" type="radio" onchange="checkRadioOption(this)" required>
                                 3</label>                             <div class="option-checkmark"> &#10004 </div>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-2">
                             <div class="rating-choice">
-                                <label><input name="q11" value="4" type="radio" onchange="checkRadioOption(this)">
+                                <label><input name="q11" value="4" type="radio" onchange="checkRadioOption(this)" required>
                                 4</label>                             <div class="option-checkmark"> &#10004 </div>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-2">
                             <div class="rating-choice">
-                                <label><input name="q11" value="5" type="radio" onchange="checkRadioOption(this)">
+                                <label><input name="q11" value="5" type="radio" onchange="checkRadioOption(this)" required>
                                 5</label>                             <div class="option-checkmark"> &#10004 </div>
                             </div>
                         </div>
@@ -608,6 +701,13 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-xs-12">
+                    <div class="wrapper-question-errortext hidden col-xs-3">
+                        <p class="question-errortext"><strong>Oops!</strong> You must make a selection</p>
+                        <div></div>
+                    </div>
+                    </div>
+
                 </li>
                 <!-- End Question 11 -->
 
@@ -619,45 +719,54 @@
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">A</div>
-                            <label><input name="q12" value="Extremely user-friendly" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q12" value="Extremely user-friendly" type="radio" onchange="checkRadioOption(this)" required
+                                oninvalid="invalidInput(this)"
+                                oninput="setCustomValidity('')">
                             Extremely user-friendly</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">B</div>
-                            <label><input name="q12" value="Very user-friendly" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q12" value="Very user-friendly" type="radio" onchange="checkRadioOption(this)" required>
                             Very user-friendly</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">C</div>                            
-                            <label><input name="q12" value="Somewhat user-friendly" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q12" value="Somewhat user-friendly" type="radio" onchange="checkRadioOption(this)" required>
                             Somewhat user-friendly</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">D</div>                            
-                            <label><input name="q12" value="Not so user-friendly" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q12" value="Not so user-friendly" type="radio" onchange="checkRadioOption(this)" required>
                             Not so user-friendly</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <label><input name="q12" value="Not at all user-friendly" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q12" value="Not at all user-friendly" type="radio" onchange="checkRadioOption(this)" required>
                             Not at all user-friendly</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <label><input name="q12" value="Did not try the tool" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q12" value="Did not try the tool" type="radio" onchange="checkRadioOption(this)" required>
                             Did not try the tool</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
+                    <div class="col-xs-12">
+                    <div class="wrapper-question-errortext hidden col-xs-3">
+                        <p class="question-errortext"><strong>Oops!</strong> You must make a selection</p>
+                        <div></div>
+                    </div>
+                    </div>
+
                 </li>
                 <!-- End Question 12 -->
 
@@ -671,7 +780,9 @@
                         <div class="wrapper-multiple-choice col-xs-5">
                             <div class="multiple-choice">
                                 <div class="option-alphanum">A</div>
-                                <label><input name="q13" value="Very interactive" type="checkbox" onchange="checkOption(this)">
+                                <label><input name="q13" value="Very interactive" type="checkbox" onchange="checkOption(this)"
+                                oninvalid="invalidInputMultiChoice(this)"
+                                oninput="setCustomValidity('')">
                                 Very interactive</label>                             <div class="option-checkmark"> &#10004 </div>
                             </div>
                         </div>
@@ -704,6 +815,13 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-xs-12">
+                    <div class="wrapper-question-errortext hidden col-xs-3">
+                        <p class="question-errortext"><strong>Oops!</strong> You must make a selection</p>
+                        <div></div>
+                    </div>
+                    </div>
+
                 </li>
                 <!-- End Question 13 -->
 
@@ -717,7 +835,9 @@
                         <div class="wrapper-multiple-choice col-xs-7">
                             <div class="multiple-choice">
                                 <div class="option-alphanum">A</div>
-                                <label><input name="q14" value="Hepatic Volumetry," type="checkbox" onchange="checkOption(this)">
+                                <label><input name="q14" value="Hepatic Volumetry," type="checkbox" onchange="checkOption(this)"
+                                oninvalid="invalidInputMultiChoice(this)"
+                                oninput="setCustomValidity('')">
                                 Hepatic Volumetry</label>                             <div class="option-checkmark"> &#10004 </div>
                             </div>
                         </div>
@@ -750,6 +870,13 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-xs-12">
+                    <div class="wrapper-question-errortext hidden col-xs-3">
+                        <p class="question-errortext"><strong>Oops!</strong> You must make a selection</p>
+                        <div></div>
+                    </div>
+                    </div>
+
                 </li>
                 <!-- End Question 14 -->
 
@@ -761,45 +888,54 @@
                     <div class="wrapper-multiple-choice col-xs-6">
                         <div class="multiple-choice">
                             <div class="option-alphanum">A</div>
-                            <label><input name="q15" value="More than 20 patients a month" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q15" value="More than 20 patients a month" type="radio" onchange="checkRadioOption(this)" required
+                                oninvalid="invalidInput(this)"
+                                oninput="setCustomValidity('')">
                             More than 20 patients a month</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-6">
                         <div class="multiple-choice">
                             <div class="option-alphanum">B</div>
-                            <label><input name="q15" value="10-20 patients a month" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q15" value="10-20 patients a month" type="radio" onchange="checkRadioOption(this)" required>
                             10-20 patients a month</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-6">
                         <div class="multiple-choice">
                             <div class="option-alphanum">C</div>                            
-                            <label><input name="q15" value="5-10 patients a month" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q15" value="5-10 patients a month" type="radio" onchange="checkRadioOption(this)" required>
                             5-10 patients a month</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-6">
                         <div class="multiple-choice">
                             <div class="option-alphanum">D</div>                            
-                            <label><input name="q15" value="Less than 5 patients a month" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q15" value="Less than 5 patients a month" type="radio" onchange="checkRadioOption(this)" required>
                             Less than 5 patients a month</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-6">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <label><input name="q15" value="Probably dont use" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q15" value="Probably dont use" type="radio" onchange="checkRadioOption(this)" required>
                             Probably dont use</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-6">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <label><input name="q15" value="Definitely dont use" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q15" value="Definitely dont use" type="radio" onchange="checkRadioOption(this)" required>
                             Definitely dont use</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
+                    <div class="col-xs-12">
+                    <div class="wrapper-question-errortext hidden col-xs-3">
+                        <p class="question-errortext"><strong>Oops!</strong> You must make a selection</p>
+                        <div></div>
+                    </div>
+                    </div>
+
                 </li>
                 <!-- End Question 15 -->
 
@@ -811,32 +947,40 @@
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">A</div>
-                            <label><input name="q16" value="Pay-per-use" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q16" value="Pay-per-use" type="radio" onchange="checkRadioOption(this)" required
+                                oninvalid="invalidInput(this)"
+                                oninput="setCustomValidity('')">
                             Pay-per-use</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">B</div>
-                            <label><input name="q16" value="Monthly subscription" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q16" value="Monthly subscription" type="radio" onchange="checkRadioOption(this)" required>
                             Monthly subscription</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">C</div>                            
-                            <label><input name="q16" value="Annual subscription" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q16" value="Annual subscription" type="radio" onchange="checkRadioOption(this)" required>
                             Annual subscription</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-5">
                         <div class="multiple-choice">
                             <div class="option-alphanum">D</div>                            
-                            <label><input name="q16" value="Other" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q16" value="Other" type="radio" onchange="checkRadioOption(this)" required>
                             Other</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
-                    
+                    <div class="col-xs-12">
+                    <div class="wrapper-question-errortext hidden col-xs-3">
+                        <p class="question-errortext"><strong>Oops!</strong> You must make a selection</p>
+                        <div></div>
+                    </div>
+                    </div>
+
                 </li>
                 <!-- End Question 16 -->
 
@@ -848,32 +992,39 @@
                     <div class="wrapper-multiple-choice col-xs-6">
                         <div class="multiple-choice">
                             <div class="option-alphanum">A</div>
-                            <label><input name="q17" value="INR 1500-3000 (USD 25-50)" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q17" value="INR 1500-3000 (USD 25-50)" type="radio" onchange="checkRadioOption(this)" required
+                                oninvalid="invalidInput(this)"
+                                oninput="setCustomValidity('')">
                             INR 1500-3000 (USD 25-50)</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-6">
                         <div class="multiple-choice">
                             <div class="option-alphanum">B</div>
-                            <label><input name="q17" value="INR 3000-6000 (USD 50-100)" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q17" value="INR 3000-6000 (USD 50-100)" type="radio" onchange="checkRadioOption(this)" required>
                             INR 3000-6000 (USD 50-100)</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-6">
                         <div class="multiple-choice">
                             <div class="option-alphanum">C</div>                            
-                            <label><input name="q17" value="INR 6000-9000 (USD 100-150)" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q17" value="INR 6000-9000 (USD 100-150)" type="radio" onchange="checkRadioOption(this)" required>
                             INR 6000-9000 (USD 100-150)</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-6">
                         <div class="multiple-choice">
                             <div class="option-alphanum">D</div>                            
-                            <label><input name="q17" value="INR 9000-12000 (USD 150-200)" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q17" value="INR 9000-12000 (USD 150-200)" type="radio" onchange="checkRadioOption(this)" required>
                             INR 9000-12000 (USD 150-200)</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
-                    
+                    <div class="col-xs-12">
+                        <div class="wrapper-question-errortext hidden col-xs-3">
+                            <p class="question-errortext"><strong>Oops!</strong> You must make a selection</p>
+                            <div></div>
+                        </div>
+                    </div>
                 </li>
                 <!-- End Question 17 -->
 
@@ -885,39 +1036,46 @@
                     <div class="wrapper-multiple-choice col-xs-8">
                         <div class="multiple-choice">
                             <div class="option-alphanum">A</div>
-                            <label><input name="q18" value="Advanced solutions like Myrian, TeraRecon" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q18" value="Advanced solutions like Myrian, TeraRecon" type="radio" onchange="checkRadioOption(this)" required
+                                oninvalid="invalidInput(this)"
+                                oninput="setCustomValidity('')">
                             Advanced solutions like Myrian, TeraRecon</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-8">
                         <div class="multiple-choice">
                             <div class="option-alphanum">B</div>
-                            <label><input name="q18" value="OEM Manufacturer: GE/Philips/Siemens workstation" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q18" value="OEM Manufacturer: GE/Philips/Siemens workstation" type="radio" onchange="checkRadioOption(this)" required>
                             OEM Manufacturer: GE/Philips/Siemens workstation</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-8">
                         <div class="multiple-choice">
                             <div class="option-alphanum">C</div>                            
-                            <label><input name="q18" value="Radiologist tells me, I am unaware of the software" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q18" value="Radiologist tells me, I am unaware of the software" type="radio" onchange="checkRadioOption(this)" required>
                             Radiologist tells me, I am unaware of the software</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-8">
                         <div class="multiple-choice">
                             <div class="option-alphanum">D</div>                            
-                            <label><input name="q18" value="Read multi-phase CT scan directly, dont require any software" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q18" value="Read multi-phase CT scan directly, dont require any software" type="radio" onchange="checkRadioOption(this)" required>
                             Read multi-phase CT scan directly, dont require any software</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-8">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <label><input name="q18" value="Other" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q18" value="Other" type="radio" onchange="checkRadioOption(this)" required>
                             Other</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
-                    
+                    <div class="col-xs-12">
+                        <div class="wrapper-question-errortext hidden col-xs-3">
+                            <p class="question-errortext"><strong>Oops!</strong> You must make a selection</p>
+                            <div></div>
+                        </div>
+                    </div>
                 </li>
                 <!-- End Question 18 -->
 
@@ -929,39 +1087,46 @@
                     <div class="wrapper-multiple-choice col-xs-3">
                         <div class="multiple-choice">
                             <div class="option-alphanum">A</div>
-                            <label><input name="q19" value="Extremely likely" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q19" value="Extremely likely" type="radio" onchange="checkRadioOption(this)" required
+                                oninvalid="invalidInput(this)"
+                                oninput="setCustomValidity('')">
                             Extremely likely</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-3">
                         <div class="multiple-choice">
                             <div class="option-alphanum">B</div>
-                            <label><input name="q19" value="Very likely" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q19" value="Very likely" type="radio" onchange="checkRadioOption(this)" required>
                             Very likely</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-3">
                         <div class="multiple-choice">
                             <div class="option-alphanum">C</div>                            
-                            <label><input name="q19" value="Somewhat likely" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q19" value="Somewhat likely" type="radio" onchange="checkRadioOption(this)" required>
                             Somewhat likely</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-3">
                         <div class="multiple-choice">
                             <div class="option-alphanum">D</div>                            
-                            <label><input name="q19" value="Not so likely" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q19" value="Not so likely" type="radio" onchange="checkRadioOption(this)" required>
                             Not so likely</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="wrapper-multiple-choice col-xs-3">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <label><input name="q19" value="Not at all likely" type="radio" onchange="checkRadioOption(this)">
+                            <label><input name="q19" value="Not at all likely" type="radio" onchange="checkRadioOption(this)" required>
                             Not at all likely</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
-                    
+                    <div class="col-xs-12">
+                        <div class="wrapper-question-errortext hidden col-xs-3">
+                            <p class="question-errortext"><strong>Oops!</strong> You must make a selection</p>
+                            <div></div>
+                        </div>
+                    </div>
                 </li>
                 <!-- End Question 19 -->
 
@@ -973,67 +1138,69 @@
                     <div class="col-xs-11">
                         <div class="rating-multiple-choice col-xs-1">
                             <div class="rating-choice">
-                                <label><input name="q20" value="0" type="radio" onchange="checkRadioOption(this)">
+                                <label><input name="q20" value="0" type="radio" onchange="checkRadioOption(this)" required
+                                    oninvalid="invalidInputExtraLayer(this)"
+                                oninput="setCustomValidity('')">
                                 0</label>                             <div class="option-checkmark"> &#10004 </div>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-1">
                             <div class="rating-choice">
-                                <label><input name="q20" value="1" type="radio" onchange="checkRadioOption(this)">
+                                <label><input name="q20" value="1" type="radio" onchange="checkRadioOption(this)" required>
                                 1</label>                             <div class="option-checkmark"> &#10004 </div>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-1">
                             <div class="rating-choice">
-                                <label><input name="q20" value="2" type="radio" onchange="checkRadioOption(this)">
+                                <label><input name="q20" value="2" type="radio" onchange="checkRadioOption(this)" required>
                                 2</label>                             <div class="option-checkmark"> &#10004 </div>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-1">
                             <div class="rating-choice">
-                                <label><input name="q20" value="3" type="radio" onchange="checkRadioOption(this)">
+                                <label><input name="q20" value="3" type="radio" onchange="checkRadioOption(this)" required>
                                 3</label>                             <div class="option-checkmark"> &#10004 </div>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-1">
                             <div class="rating-choice">
-                                <label><input name="q20" value="4" type="radio" onchange="checkRadioOption(this)">
+                                <label><input name="q20" value="4" type="radio" onchange="checkRadioOption(this)" required>
                                 4</label>                             <div class="option-checkmark"> &#10004 </div>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-1">
                             <div class="rating-choice">
-                                <label><input name="q20" value="5" type="radio" onchange="checkRadioOption(this)">
+                                <label><input name="q20" value="5" type="radio" onchange="checkRadioOption(this)" required>
                                 5</label>                             <div class="option-checkmark"> &#10004 </div>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-1">
                             <div class="rating-choice">
-                                <label><input name="q20" value="6" type="radio" onchange="checkRadioOption(this)">
+                                <label><input name="q20" value="6" type="radio" onchange="checkRadioOption(this)" required>
                                 6</label>                             <div class="option-checkmark"> &#10004 </div>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-1">
                             <div class="rating-choice">
-                                <label><input name="q20" value="7" type="radio" onchange="checkRadioOption(this)">
+                                <label><input name="q20" value="7" type="radio" onchange="checkRadioOption(this)" required>
                                 7</label>                             <div class="option-checkmark"> &#10004 </div>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-1">
                             <div class="rating-choice">
-                                <label><input name="q20" value="8" type="radio" onchange="checkRadioOption(this)">
+                                <label><input name="q20" value="8" type="radio" onchange="checkRadioOption(this)" required>
                                 8</label>                             <div class="option-checkmark"> &#10004 </div>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-1">
                             <div class="rating-choice">
-                                <label><input name="q20" value="9" type="radio" onchange="checkRadioOption(this)">
+                                <label><input name="q20" value="9" type="radio" onchange="checkRadioOption(this)" required>
                                 9</label>                             <div class="option-checkmark"> &#10004 </div>
                             </div>
                         </div>
                         <div class="rating-multiple-choice col-xs-1">
                             <div class="rating-choice">
-                                <label><input name="q20" value="10" type="radio" onchange="checkRadioOption(this)">
+                                <label><input name="q20" value="10" type="radio" onchange="checkRadioOption(this)" required>
                                 10</label>                             <div class="option-checkmark"> &#10004 </div>
                             </div>
                         </div>
@@ -1050,6 +1217,12 @@
                                 Extremely likely
                         </div>
                     </div>
+                    <div class="col-xs-12">
+                        <div class="wrapper-question-errortext hidden col-xs-3">
+                            <p class="question-errortext"><strong>Oops!</strong> You must make a selection</p>
+                            <div></div>
+                        </div>
+                    </div>
                 </li>
                 <!-- End Question 20 -->
 
@@ -1059,7 +1232,12 @@
                     <p class="question-subtext "></p>
 
                     <textarea name="q21" form="survey-form" class="text-input col-xs-11" rows="1" ></textarea>
-                    
+                    <div class="col-xs-12">
+                        <div class="wrapper-question-errortext hidden col-xs-3">
+                            <p class="question-errortext"><strong>Oops!</strong> You must make a selection</p>
+                            <div></div>
+                        </div>
+                    </div>
                 </li>
                 <!-- End Question 21 -->
 
@@ -1069,6 +1247,12 @@
                     <p class="question-subtext "></p>
 
                     <textarea name="q22" form="survey-form" class="text-input col-xs-11" rows="1" onkeyup="auto_grow(this)" ></textarea>
+                    <div class="col-xs-12">
+                        <div class="wrapper-question-errortext hidden col-xs-3">
+                            <p class="question-errortext"><strong>Oops!</strong> You must make a selection</p>
+                            <div></div>
+                        </div>
+                    </div>
                 </li>
                 <!-- End Question 22 -->
                 <hr style="width: 100%; color: #ccc; height: 1px; background-color:#ccc;" />                

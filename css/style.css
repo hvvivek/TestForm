@@ -45,6 +45,18 @@ ul.container
 {
         margin-bottom: 2em;
 }
+
+.question-errortext
+{
+    margin-top: 1.5em;
+    color: white;
+    background-color: rgb(153,0,0);
+    padding: 5px;
+    font-size: 0.8em;
+
+        /* margin-bottom: 2em; */
+}
+
 .question-number
 {
     color: rgba(79, 176, 174,1);
@@ -290,4 +302,19 @@ textarea::-webkit-input-placeholder{
 #logo
 {
     margin-bottom: 2em;
+}
+
+.question-errortext
+{
+    margin-bottom: 0px;
+}
+.wrapper-question-errortext>div
+{
+    margin-top: -2.1em;
+    margin-left: 0.5em;
+    width: 0px;
+    height: 0px;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-bottom: 5px solid rgb(153,0,0);
 }
