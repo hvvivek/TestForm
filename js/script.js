@@ -38,3 +38,9 @@ function checkActiveQuestion()
     }
         activeQuestion.classList.add("active");
 }
+
+function checkOption(checkOption)
+{
+    console.log(checkOption);
+    
+}
