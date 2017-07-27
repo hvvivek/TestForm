@@ -409,7 +409,7 @@ textarea::-webkit-input-placeholder{
     }
     #completion-bar>div
     {
-        width: 0.7em;
+        width: 0.5em;
         height: 0.2em;
         background-color: rgba(79, 176, 174,0.3);
         float: left;
@@ -420,7 +420,7 @@ textarea::-webkit-input-placeholder{
 @media (max-width: 1200px) {
     #completion-bar>div
     {
-        width: 0.7em;
+        width: 0.5em;
         height: 0.2em;
         background-color: rgba(79, 176, 174,0.3);
         float: left;
