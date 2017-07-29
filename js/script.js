@@ -213,14 +213,15 @@ function blink(checkOption)
 
 function moveToNextQuestion(checkOption)
 {
-    console.log(checkOption.parentNode.parentNode.parentNode.parentNode.offsetHeight/2);
-    scrollTo(0, checkOption.parentNode.parentNode.parentNode.parentNode.offsetTop + checkOption.parentNode.parentNode.parentNode.parentNode.offsetHeight/2);
+    console.log(checkOption.parentNode.parentNode.parentNode.parentNode.nextElementSibling);
+    console.log(checkOption.parentNode.parentNode.parentNode.parentNode.offsetTop + checkOption.parentNode.parentNode.parentNode.parentNode.nextElementSibling.offsetHeight/2);
+    scrollTo(0, checkOption.parentNode.parentNode.parentNode.parentNode.offsetTop + checkOption.parentNode.parentNode.parentNode.parentNode.nextElementSibling.offsetHeight/2 );
 }
 
 function moveToNextQuestionRatingButton(checkOption)
 {
-    console.log(checkOption.parentNode.parentNode.parentNode.parentNode.offsetHeight/2);
-    scrollTo(0, checkOption.parentNode.parentNode.parentNode.parentNode.parentNode.offsetTop + checkOption.parentNode.parentNode.parentNode.parentNode.parentNode.offsetHeight/2);
+    console.log(checkOption.parentNode.parentNode.parentNode.parentNode.parentNode.offsetTop + checkOption.parentNode.parentNode.parentNode.parentNode.parentNode.nextSibling.offsetHeight/2);
+    scrollTo(0, checkOption.parentNode.parentNode.parentNode.parentNode.parentNode.offsetTop + checkOption.parentNode.parentNode.parentNode.parentNode.parentNode.nextSibling.offsetHeight/2);
 }
 
 function auto_grow(element) {
