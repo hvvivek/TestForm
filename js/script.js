@@ -309,3 +309,72 @@ function selectOption( parentElement )
         checkRadioOption( parentElement.querySelectorAll("input[type=radio]")[0] );
     }
 }
+
+function selectOptionWithoutMove( parentElement )
+{
+    otherOption(parentElement.querySelector("input[type=radio],input[type=checkbox]"));
+    parentElement.querySelectorAll("input[type=checkbox],input[type=radio]")[0].checked = true;
+    if(parentElement.querySelectorAll("input[type=checkbox]")[0])
+    {
+        checkOption( parentElement.querySelectorAll("input[type=checkbox]")[0] );
+    }
+    else if(parentElement.querySelectorAll("input[type=radio]")[0])
+    {
+        checkRadioOptionWithoutMove( parentElement.querySelectorAll("input[type=radio]")[0] );
+    }
+}
+
+function otherOption( element )
+{
+    element.nextSibling.nextSibling.classList.remove("hidden");
+    element.parentNode.querySelector("span").innerHTML="";
+    
+}
+
+function fillOtherOption(element)
+{
+    
+    element.parentNode.querySelector("input[type=radio],input[type=checkbox]").value = element.value;
+}
+
+function checkRadioOptionWithoutMove(checkOption)
+{
+    checkOption.parentNode.parentNode.parentNode.classList.remove("col-xs-3","col-xs-4","col-xs-5","col-xs-6","col-xs-7","col-xs-8","col-md-3","col-md-4","col-md-5","col-md-6","col-md-7","col-md-8");
+    checkOption.parentNode.parentNode.parentNode.classList.add("col-xs-12", "col-md-10");
+
+    var otherQuestions = checkOption.parentNode.parentNode.parentNode.parentNode.querySelectorAll(".multiple-choice, .rating-multiple-choice");
+    for( var index = 0; index < otherQuestions.length; index++ )
+        {
+            var prev = otherQuestions[index].querySelectorAll(".rating-checked")[0];
+            if( prev )
+                {
+                    prev.classList.remove("rating-checked");
+                }
+            else
+                {
+                    if( otherQuestions[index].classList.contains("checked") )
+                        {
+                            otherQuestions[index].classList.remove("checked");
+                            break;
+                        }
+                }
+
+        }
+
+    // checkOption.parentNode.parentNode.parentNode.classList.add("wrapper-no-margin");  
+    if( checkOption.parentNode.parentNode.classList.contains("rating-choice") )
+        {
+            checkOption.parentNode.parentNode.classList.add("rating-checked");
+            var container = checkOption.parentNode.parentNode.parentNode.parentNode.parentNode.querySelectorAll(".wrapper-question-errortext")[0].classList.add("hidden");
+        }
+    else
+        {      
+            checkOption.parentNode.parentNode.classList.add("checked");
+            var container = checkOption.parentNode.parentNode.parentNode.parentNode.querySelectorAll(".wrapper-question-errortext")[0].classList.add("hidden");
+            blink(checkOption);
+        }
+
+        fillCompletionBar();
+}
+
+

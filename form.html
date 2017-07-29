@@ -71,11 +71,14 @@
                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
-                    <div class="wrapper-multiple-choice col-md-5" onclick="selectOption(this)">
+                    <div class="wrapper-multiple-choice col-md-5" onclick="selectOptionWithoutMove(this)">
                         <div class="multiple-choice">
                             <div class="option-alphanum">F</div>                            
-                            <label><input name="q1" value="Other" type="radio" onchange="checkRadioOption(this)" required>
-                            Other</label>                             
+                            <label>
+                                <input name="q1" value="Other" type="radio" onclick="otherOption(this)" onchange="checkRadioOptionWithoutMove(this)" required>
+                                <input type="text" class="hidden col-xs-12"  onkeyup="fillOtherOption(this)">
+                                <span>Other</span>
+                            </label>                             
                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
@@ -129,11 +132,15 @@
                             Healthcare IT Professional</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
-                    <div class="wrapper-multiple-choice col-md-5" onclick="selectOption(this)">
+                    <div class="wrapper-multiple-choice col-md-5" onclick="selectOptionWithoutMove(this)">
                         <div class="multiple-choice">
                             <div class="option-alphanum">F</div>                            
-                            <label><input name="q2" value="Other" type="radio" onchange="checkRadioOption(this)" required>
-                            Other</label>                             <div class="option-checkmark"> &#10004 </div>
+                            <label>
+                                <input name="q2" value="Other" type="radio" onclick="otherOption(this)" onchange="checkRadioOptionWithoutMove(this)" required>
+                                <input type="text" class="hidden col-xs-12"  onkeyup="fillOtherOption(this)">
+                                <span>Other</span>
+                            </label>                        
+                            <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -200,11 +207,15 @@
                             Europe</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
-                    <div class="wrapper-multiple-choice col-md-3" onclick="selectOption(this)">
+                    <div class="wrapper-multiple-choice col-md-3" onclick="selectOptionWithoutMove(this)">
                         <div class="multiple-choice">
                             <div class="option-alphanum">F</div>                            
-                            <label><input name="q3" value="Other" type="radio" onchange="checkRadioOption(this)" required>
-                            Other</label>                             <div class="option-checkmark"> &#10004 </div>
+                            <label>
+                                <input name="q3" value="Other" type="radio" onclick="otherOption(this)" onchange="checkRadioOptionWithoutMove(this)" required>
+                                <input type="text" class="hidden col-xs-12"  onkeyup="fillOtherOption(this)">
+                                <span>Other</span>
+                            </label>
+                            <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -261,11 +272,15 @@
                                 Browser Application - Work from Anywhere</label>                             <div class="option-checkmark"> &#10004 </div>
                             </div>
                         </div>
-                        <div class="wrapper-multiple-choice col-md-7" onclick="selectOption(this)">
+                        <div class="wrapper-multiple-choice col-md-7" onclick="selectOptionWithoutMove(this)">
                             <div class="multiple-choice">
                                 <div class="option-alphanum">F</div>                            
-                                <label><input name="q4" value="Other," type="checkbox" onchange="checkOption(this)">
-                                Other</label>                             <div class="option-checkmark"> &#10004 </div>
+                                <label>
+                                    <input name="q4" value="Other," type="checkbox" onclick="otherOption(this)" onchange="checkOption(this)" required>
+                                    <input type="text" class="hidden col-xs-12"  onkeyup="fillOtherOption(this)">
+                                    <span>Other</span>
+                                </label>                             
+                                <div class="option-checkmark"> &#10004 </div>
                             </div>
                         </div>
                     </div>
@@ -849,11 +864,15 @@
                                 Download to system</label>                             <div class="option-checkmark"> &#10004 </div>
                             </div>
                         </div>
-                        <div class="wrapper-multiple-choice col-md-7" onclick="selectOption(this)">
+                        <div class="wrapper-multiple-choice col-md-7" onclick="selectOptionWithoutMove(this)">
                             <div class="multiple-choice">
                                 <div class="option-alphanum">E</div>                            
-                                <label><input name="q14" value="Other," type="checkbox" onchange="checkOption(this)">
-                                Other</label>                             <div class="option-checkmark"> &#10004 </div>
+                                <label>
+                                    <input name="q14" value="Other," type="checkbox" onclick="otherOption(this)" onchange="checkOption(this)" required>
+                                    <input type="text" class="hidden col-xs-12"  onkeyup="fillOtherOption(this)">
+                                    <span>Other</span>
+                                </label>                             
+                                <div class="option-checkmark"> &#10004 </div>
                             </div>
                         </div>
                     </div>
@@ -952,11 +971,15 @@
                             Annual subscription</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
-                    <div class="wrapper-multiple-choice col-md-5" onclick="selectOption(this)">
+                    <div class="wrapper-multiple-choice col-md-5" onclick="selectOptionWithoutMove(this)">
                         <div class="multiple-choice">
                             <div class="option-alphanum">D</div>                            
-                            <label><input name="q16" value="Other" type="radio" onchange="checkRadioOption(this)" required>
-                            Other</label>                             <div class="option-checkmark"> &#10004 </div>
+                            <label>
+                                <input name="q16" value="Other" type="radio" onclick="otherOption(this)" onchange="checkRadioOptionWithoutMove(this)" required>
+                                <input type="text" class="hidden col-xs-12"  onkeyup="fillOtherOption(this)">
+                                <span>Other</span>
+                            </label>                             
+                            <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -1046,11 +1069,15 @@
                             Read multi-phase CT scan directly, don't require any software</label>                             <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
-                    <div class="wrapper-multiple-choice col-md-8"  onclick="selectOption(this)">
+                    <div class="wrapper-multiple-choice col-md-8" onclick="selectOptionWithoutMove(this)">
                         <div class="multiple-choice">
                             <div class="option-alphanum">E</div>                            
-                            <label><input name="q18" value="Other" type="radio" onchange="checkRadioOption(this)" required>
-                            Other</label>                             <div class="option-checkmark"> &#10004 </div>
+                            <label>
+                                <input name="q18" value="Other" type="radio" onclick="otherOption(this)" onchange="checkRadioOptionWithoutMove(this)" required>
+                                <input type="text" class="hidden col-xs-12"  onkeyup="fillOtherOption(this)">
+                                <span>Other</span>
+                            </label>                             
+                            <div class="option-checkmark"> &#10004 </div>
                         </div>
                     </div>
                     <div class="col-md-12">
