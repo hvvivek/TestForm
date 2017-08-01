@@ -220,8 +220,8 @@ function moveToNextQuestion(checkOption)
 
 function moveToNextQuestionRatingButton(checkOption)
 {
-    console.log(checkOption.parentNode.parentNode.parentNode.parentNode.parentNode.offsetTop + checkOption.parentNode.parentNode.parentNode.parentNode.parentNode.nextSibling.offsetHeight/2);
-    scrollTo(0, checkOption.parentNode.parentNode.parentNode.parentNode.parentNode.offsetTop + checkOption.parentNode.parentNode.parentNode.parentNode.parentNode.nextSibling.offsetHeight/2);
+    console.log(checkOption.parentNode.parentNode.parentNode.parentNode.parentNode.offsetTop + checkOption.parentNode.parentNode.parentNode.parentNode.parentNode.nextElementSibling.offsetHeight / 2);
+    scrollTo(0, checkOption.parentNode.parentNode.parentNode.parentNode.parentNode.offsetTop + checkOption.parentNode.parentNode.parentNode.parentNode.parentNode.nextElementSibling.offsetHeight / 2);
 }
 
 function auto_grow(element) {
@@ -288,7 +288,15 @@ function invalidInputMultiChoice()
                 
                 errorText.classList.remove("hidden");
                 errorText.innerHTML = errorCount + " answer(s) need completing";
-            }
+        } else {
+            removeOverlay();
+            document.forms["survey-form"].submit();
+        }
+}
+
+function removeOverlay() {
+    top.document.getElementById("surveyFrame").style.display = "none";
+    scrollTo(0, 0);
 }
 
 function input( element )
