@@ -220,8 +220,8 @@ function moveToNextQuestion(checkOption)
 
 function moveToNextQuestionRatingButton(checkOption)
 {
-    console.log(checkOption.parentNode.parentNode.parentNode.parentNode.parentNode.offsetTop + checkOption.parentNode.parentNode.parentNode.parentNode.parentNode.nextSibling.offsetHeight/2);
-    scrollTo(0, checkOption.parentNode.parentNode.parentNode.parentNode.parentNode.offsetTop + checkOption.parentNode.parentNode.parentNode.parentNode.parentNode.nextSibling.offsetHeight/2);
+    console.log(checkOption.parentNode.parentNode.parentNode.parentNode.parentNode.offsetTop + checkOption.parentNode.parentNode.parentNode.parentNode.parentNode.nextElementSibling.offsetHeight/2);
+    scrollTo(0, checkOption.parentNode.parentNode.parentNode.parentNode.parentNode.offsetTop + checkOption.parentNode.parentNode.parentNode.parentNode.parentNode.nextElementSibling.offsetHeight/2);
 }
 
 function auto_grow(element) {
@@ -300,15 +300,23 @@ function input( element )
 
 function selectOption( parentElement )
 {
-    parentElement.querySelectorAll("input[type=checkbox],input[type=radio]")[0].checked = true;
-    if(parentElement.querySelectorAll("input[type=checkbox]")[0])
-    {
-        checkOption( parentElement.querySelectorAll("input[type=checkbox]")[0] );
-    }
-    else if(parentElement.querySelectorAll("input[type=radio]")[0])
-    {
-        checkRadioOption( parentElement.querySelectorAll("input[type=radio]")[0] );
-    }
+    if(!parentElement.querySelectorAll("input[type=checkbox],input[type=radio]")[0].checked)
+        {
+            parentElement.querySelectorAll("input[type=checkbox],input[type=radio]")[0].checked = true;
+            if(parentElement.querySelectorAll("input[type=checkbox]")[0])
+            {
+                checkOption( parentElement.querySelectorAll("input[type=checkbox]")[0] );
+            }
+            else if(parentElement.querySelectorAll("input[type=radio]")[0])
+            {
+                checkRadioOption( parentElement.querySelectorAll("input[type=radio]")[0] );
+            }
+        }
+    else if(parentElement.querySelectorAll("input[type=checkbox]")[0] && parentElement.querySelectorAll("input[type=checkbox]")[0].checked)
+        {
+            parentElement.querySelectorAll("input[type=checkbox]")[0].checked = false;
+            checkOption( parentElement.querySelectorAll("input[type=checkbox]")[0] );
+        }
 }
 
 function selectOptionWithoutMove( parentElement )
